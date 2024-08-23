@@ -10,6 +10,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `python manage.py runserver`
+
+Runs the Django server\
+Open [http://127.0.0.1:8000/api/recipes/](http://127.0.0.1:8000/api/recipes/) or [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/) to view it in your browser.
+
 ### `python manage.py seed_recipes`
 
 Seeds the data with pre-created recipes
@@ -58,10 +63,12 @@ Seeds the data with pre-created users
 ]
 ```
 
-### `python manage.py runserver`
-
-Runs the Django server\
-Open [http://127.0.0.1:8000/api/recipes/](http://127.0.0.1:8000/api/recipes/) or [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/) to view it in your browser.
+![Homepage](https://github.com/meganle414/kangacook/blob/main/images/index.png?raw=true)
+![RecipeCarousel](https://github.com/meganle414/kangacook/blob/main/images/recipe_carousel.png?raw=true)
+![RecipeList](https://github.com/meganle414/kangacook/blob/main/images/recipe_list.png?raw=true)
+![Footer](https://github.com/meganle414/kangacook/blob/main/images/index_footer.png?raw=true)
+![Contact Page](https://github.com/meganle414/kangacook/blob/main/images/contact.png?raw=true)
+![Members](https://github.com/meganle414/kangacook/blob/main/images/members.png?raw=true)
 
 # kangacook
 Develop a simple website:  • Frontend: Use React.js to build a simple web page (whatever you like to present). Just like to see if you know how to use components with React. • Backend: Use Django to build at least two API endpoints for the frontend page you created to use.
