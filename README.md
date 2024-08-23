@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -15,61 +14,58 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `python manage.py seed_recipes`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Seeds the data with pre-created recipes
+```[
+    {
+        "id": 1,
+        "title": "Chinese stir-fry tomato and eggs with beef",
+        "description": "Soft silky eggs stir fried in a sweet tangy tomato sauce with beef and green onions.",
+        "image": "https://smellylunchbox.com/wp-content/uploads/2024/07/chinesetomatoeggsbeef-360x540.jpg",
+        "cuisine": "Cantonese"
+    },
+    {
+        "id": 2,
+        "title": "Char Siu",
+        "description": "Barbecued pork, usually eaten with rice, used as an ingredient for noodle dishes, in stir fries, and cha siu bao.",
+        "image": "https://omnivorescookbook.com/wp-content/uploads/2022/09/220908_Air-Fryer-Char-Siu-Pork_550.jpg",
+        "cuisine": "Cantonese"
+    },
+    {
+        "id": 3,
+        "title": "Mapo Tofu",
+        "description": "Silken tofu awash in a fiery málà sauce, heightened by the addition of salty sweet black beans and ground beef.",
+        "image": "https://www.seriouseats.com/thmb/WPxApB-69YAughV6jf7AWZQnd6M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2014__08__vegan-mapo-tofu-kenji-502201f86bf740ae8361bb8fc9b68feb.jpg",
+        "cuisine": "Szechuan"
+    },
+    ...
+]
+```
 
-### `npm run build`
+### `python manage.py seed_users`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Seeds the data with pre-created users
+```[
+    {
+        "email": "meganle414@gmail.com+kangacookuser1",
+        "username": "KangacookUser1"
+    },
+    {
+        "email": "meganle414@gmail.com+kangacookuser2",
+        "username": "KangacookUser2"
+    },
+    {
+        "email": "meganle414@gmail.com+kangacookuser3",
+        "username": "KangacookUser3"
+    }
+]
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `python manage.py runserver`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs the Django server\
+Open [http://127.0.0.1:8000/api/recipes/](http://127.0.0.1:8000/api/recipes/) or [http://127.0.0.1:8000/api/users/](http://127.0.0.1:8000/api/users/) to view it in your browser.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
 # kangacook
 Develop a simple website:  • Frontend: Use React.js to build a simple web page (whatever you like to present). Just like to see if you know how to use components with React. • Backend: Use Django to build at least two API endpoints for the frontend page you created to use.
->>>>>>> 36473e1b283bdc2cf79f48b4d7899cec1d33a354
