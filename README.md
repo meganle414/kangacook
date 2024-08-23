@@ -64,9 +64,9 @@ Seeds the data with pre-created users
 ```
 
 ![Homepage](https://github.com/meganle414/kangacook/blob/main/images/index.png?raw=true)
+![Footer](https://github.com/meganle414/kangacook/blob/main/images/index_footer.png?raw=true)
 ![RecipeCarousel](https://github.com/meganle414/kangacook/blob/main/images/recipe_carousel.png?raw=true)
 ![RecipeList](https://github.com/meganle414/kangacook/blob/main/images/recipe_list.png?raw=true)
-![Footer](https://github.com/meganle414/kangacook/blob/main/images/index_footer.png?raw=true)
 ![Contact Page](https://github.com/meganle414/kangacook/blob/main/images/contact.png?raw=true)
 ![Members](https://github.com/meganle414/kangacook/blob/main/images/members.png?raw=true)
 
