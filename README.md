@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# kangacook
+Develop a simple website:  • Frontend: Use React.js to build a simple web page (whatever you like to present). Just like to see if you know how to use components with React. • Backend: Use Django to build at least two API endpoints for the frontend page you created to use.
+>>>>>>> 36473e1b283bdc2cf79f48b4d7899cec1d33a354
