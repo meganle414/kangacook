@@ -18,7 +18,8 @@ Open [http://127.0.0.1:8000/api/recipes/](http://127.0.0.1:8000/api/recipes/) or
 ### `python manage.py seed_recipes`
 
 Seeds the data with pre-created recipes
-```[
+```
+[
     {
         "id": 1,
         "title": "Chinese stir-fry tomato and eggs with beef",
@@ -47,7 +48,8 @@ Seeds the data with pre-created recipes
 ### `python manage.py seed_users`
 
 Seeds the data with pre-created users
-```[
+```
+[
     {
         "email": "meganle414@gmail.com+kangacookuser1",
         "username": "KangacookUser1"
