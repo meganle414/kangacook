@@ -1,0 +1,170 @@
+.App {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+}
+
+.App-header {
+  background-color: #ffffff;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-logo {
+  padding: 10px;
+}
+
+.App-header ul {
+  text-decoration: 'none'
+}
+
+.App-header li {
+  padding: 10px;
+  list-style: none;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  text-decoration: 'none'
+}
+.App-header p {
+  padding: 10px;
+}
+
+.App-searchbar {
+  padding: 10px;
+}
+
+.App-body {
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-index-body {
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-index-smaller-element {
+  position: absolute;
+  z-index: 11;
+  bottom: 3%;
+  left: 10%;
+  width: 30%;
+}
+
+.App-index-larger-element {
+  position: absolute;
+  z-index: 10;
+  top: 10;
+  right: 20%;
+  background: rgb(255,116,41);
+  background: linear-gradient(0deg, rgba(255,116,41,1) 0%, rgba(255,157,103,1) 25%, rgba(255,150,150,1) 50%, rgba(255,176,176,1) 75%, rgba(255,255,255,1) 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  min-height: 70vh;
+  align-items: center;
+  width: 50%;
+}
+
+.App-index-larger-element h2 {
+  width: 94%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-weight: 800;
+  font-size: calc(10px + 7vmin);
+  padding-top: 40px;
+  padding-left: 50px;
+  margin-bottom: 0;
+}
+
+.App-index-larger-element p {
+  width: 80%;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: calc(6px + 1vmin);
+  padding-right: 60px;
+}
+
+.App-index-larger-element .subtitle {
+  width: 40%;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+  font-family: Manrope;
+  font-weight: 900;
+  font-size: calc(6px + 1vmin);
+  padding-right: 60px;
+}
+
+.App-index-larger-element a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.questionnaire {
+  transform: translate(40%, -40%);
+}
+
+.questionnaire:hover {
+  transform: scale(2) translate(40%, -20%);
+}
+
+.App-recipes-body {
+  min-height: 80vh;
+  background-color: #ffac7f;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-all-recipes-header {
+  text-align: left;
+  padding-left: 2%;
+}
+
+.App-recipes-header {
+  text-align: left;
+  padding-left: 2%;
+}
+
+.App-footer {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  min-height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 1vmin);
+  color: black;
+}
+
+.App-footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.info-email {
+  margin: 10px 0px;
+  text-decoration: none;
+  color: #000;
+  font-size: calc(5px + 1vmin);
+}
+
+.footer-terms {
+  text-decoration: none;
+  color: #000;
+  font-size: calc(5px + 1vmin);
+}
