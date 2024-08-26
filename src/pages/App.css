@@ -140,6 +140,34 @@
   padding-left: 2%;
 }
 
+.error-message {
+  color: red;
+  font-weight: bold;
+  padding-left: 16%;
+}
+
+.profile {
+  background: #fff;
+  padding: 20px 20px;
+  border-radius: 15px;
+}
+
+.Log-out-button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0 0;
+  font-family: 'Montserrat',sans-serif;
+  border: 2px solid #ff5252;
+  background: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.Log-out-button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .App-footer {
   margin: 0;
   margin-bottom: 10px;

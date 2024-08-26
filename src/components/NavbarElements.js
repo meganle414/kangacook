@@ -58,3 +58,12 @@ export const NavMenu = styled.div`
         display: none;
     }
 `;
+
+export const LogoutButton = styled.button`
+    background: red;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    marginLeft: 10px;
+    cursor: pointer;
+`;

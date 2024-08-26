@@ -1,9 +1,19 @@
 import logo from './logo.svg';
-import React from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
-import { FaHome, FaAppleAlt, FaRegComment, FaSmileBeam } from "react-icons/fa";
+import React, { useContext } from "react";
+import { Nav, NavLink, NavMenu, LogoutButton } from "./NavbarElements";
+import { FaHome, FaAppleAlt, FaRegComment, FaRegUser, FaSignOutAlt } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../UserContext';
  
 const Navbar = () => {
+    const { user, setUser } = useContext(UserContext);
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        setUser(null);
+        navigate('/');
+    };
+
     return (
         <>
             <Nav>
@@ -18,9 +28,23 @@ const Navbar = () => {
                     <NavLink to="/contact" activeStyle><FaRegComment style={{marginRight: '5px'}}></FaRegComment>
                         Contact Us
                     </NavLink>
-                    <NavLink to="/users" activeStyle><FaSmileBeam style={{marginRight: '5px' }}></FaSmileBeam>
-                        Our Happy Members
-                    </NavLink>
+                    {/* <NavLink to="/login" activeStyle><FaRegUser style={{marginRight: '5px' }}></FaRegUser>
+                        Login
+                    </NavLink> */}
+                    {!user ? (
+                        <NavLink to="/login" activeStyle>
+                            <FaRegUser style={{ marginRight: '5px' }} /> Login
+                        </NavLink>
+                    ) : (
+                        <>
+                            <NavLink to="/profile" activeStyle>
+                                <FaRegUser style={{ marginRight: '5px' }} /> Profile
+                            </NavLink>
+                            <LogoutButton onClick={handleLogout}>
+                                <FaSignOutAlt />
+                            </LogoutButton>
+                        </>
+                    )}
                 </NavMenu>
             </Nav>
         </>

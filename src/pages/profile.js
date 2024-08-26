@@ -1,36 +1,37 @@
 import './App.css';
-import './Contact.css';
-import { FaPhone, FaEnvelope, FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaYoutube } from "react-icons/fa";
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { FaRegUser, FaSignOutAlt, FaFacebookSquare, FaLinkedin, FaInstagramSquare, FaYoutube, FaEnvelope } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../UserContext';
  
-const Contact = () => {
-    const [email, setEmail] = useState('');
+const Login = () => {
+    const [subscriptionEmail, setSubscriptionEmail] = useState('');
     const [subscribed, setSubscribed] = useState(false);
+    const navigate = useNavigate();
+    const { user, setUser } = useContext(UserContext);
 
-    const handleEmailChange = (event) => {
-        setEmail(event.target.value);
+    const handleLogOut = () => {
+        setUser(null);
+        navigate('/');
     };
 
-    const handleSubmit = (event) => {
+    const handleSubscriptionEmailChange = (event) => {
+        setSubscriptionEmail(event.target.value);
+    };
+
+    const handleSubscriptionSubmit = (event) => {
         event.preventDefault();
-        console.log("Email submitted: ", email);
+        console.log("Email submitted: ", subscriptionEmail);
         setSubscribed(true);
     };
 
     return (
         <div className="App">
-            <body className="App-gradient-body">
-                <form className="form">
-                    <h2 className='form-header'>CONTACT US</h2>
-                    <p type="Name:"><input placeholder="John Doe" required></input></p>
-                    <p type="Email:"><input placeholder="Let us know how to get back to you!" required></input></p>
-                    <p type="Message:"><input placeholder="What would you like to tell us?" required></input></p>
-                    <button className='Submit-button'>Send Message</button>
-                    <div className="Contact-information">
-                        <span><FaPhone class="fa Fa-Phone"/> 444-444-4444</span>
-                        <span><FaEnvelope class="fa Fa-Envelope"/><a className="contact-email" href="mailto:contact@kangacook.com"> contact@kangacook.com</a></span>
-                    </div>
-                </form>
+            <body className="App-gradient-body" style={{ textAlign: 'left', paddingLeft: '50px' }}>
+                <div className='profile'>
+                    <FaRegUser style={{ fontSize: '1.5em' }}></FaRegUser><h2>{user}</h2>
+                    <button className='Log-out-button' style={{ float: 'none' }} onClick={handleLogOut}><FaSignOutAlt style={{ marginRight: '5px' }}/>Log Out</button>
+                </div>
             </body>
             <footer className="App-footer">
                 <a href="mailto:info@kangacook.com" className="info-email" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><FaEnvelope style={{ marginRight: '5px' }}></FaEnvelope> info@kangacook.com</a>
@@ -39,12 +40,12 @@ const Contact = () => {
                     <input
                         type="text"
                         className="Newsletter-email-input"
-                        value={email}
-                        onChange={handleEmailChange}
+                        value={subscriptionEmail}
+                        onChange={handleSubscriptionEmailChange}
                         placeholder="Enter your email"
                         required
                     />
-                    <button className="Newsletter-email-submit-button" type="submit" onClick={handleSubmit}>SUBSCRIBE</button>
+                    <button className="Newsletter-email-submit-button" type="submit" onClick={handleSubscriptionSubmit}>SUBSCRIBE</button>
                 </form>
                 <a href='https://www.facebook.com/profile.php?id=61561452261888'><FaFacebookSquare style={{color: '#FF5C00', fontSize: '1.5em'}}></FaFacebookSquare></a>
                 <a href='https://www.linkedin.com/company/roulettech-inc/'><FaLinkedin style={{color: '#FF5C00', fontSize: '1.5em'}}></FaLinkedin></a>
@@ -56,4 +57,4 @@ const Contact = () => {
     );
 };
  
-export default Contact;
+export default Login;

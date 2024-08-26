@@ -8,11 +8,10 @@ class Recipe(models.Model):
 
     def __str__(self):
         return self.title
-    
+
 class User(models.Model):
-    email = models.EmailField(blank=False)
-    password = models.CharField(blank=False, max_length=128)
-    username = models.CharField(blank=False, max_length=30)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=128)
 
     def __str__(self):
-        return self.username
+        return self.email

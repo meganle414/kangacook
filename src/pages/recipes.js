@@ -153,6 +153,7 @@ const Recipes = () => {
             </CarouselWrapper>
           </div>
         ))}
+        <br></br>
       </body>
       <footer className="App-footer">
         <a href="mailto:info@kangacook.com" className="info-email" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}><FaEnvelope style={{ marginRight: '5px' }}></FaEnvelope> info@kangacook.com</a>

@@ -1,4 +1,4 @@
-.App-contact-body {
+.App-gradient-body {
     background: rgb(254,95,95);
     background: radial-gradient(circle, rgba(254,95,95,1) 0%, rgba(255,172,127,1) 75%, rgba(255,255,255,1) 100%);
     margin: 0;
@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.Contact-header {
+.form-header {
     margin: 10px 0;
     padding-bottom: 10px;
     width: 180px;
@@ -57,7 +57,7 @@
     color: #5a5a5a;
 }
 
-.Send-message-button {
+.Submit-button {
     float: right;
     padding: 8px 12px;
     margin: 8px 0 0;
@@ -69,7 +69,7 @@
     transition: all .3s;
 }
 
-.Send-message-button:hover {
+.Submit-button:hover {
     border: 2px solid #FF5C00;
     background: #FF5C00;
     color: #fff;

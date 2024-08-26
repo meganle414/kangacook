@@ -2,6 +2,9 @@ from rest_framework import generics
 from rest_framework.permissions import AllowAny
 from .models import Recipe, User
 from .serializers import RecipeSerializer, UserSerializer
+import logging
+
+logger = logging.getLogger(__name__)
 
 class RecipeList(generics.ListCreateAPIView):
     queryset = Recipe.objects.all()
@@ -25,4 +28,4 @@ class UserDetailView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
     permission_classes = [AllowAny]
-    lookup_field = 'username'
+    lookup_field = 'email'
