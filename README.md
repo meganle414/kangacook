@@ -38,7 +38,7 @@ Seeds the data with pre-created recipes
         "id": 3,
         "title": "Mapo Tofu",
         "description": "Silken tofu awash in a fiery málà sauce, heightened by the addition of salty sweet black beans and ground beef.",
-        "image": "https://www.seriouseats.com/thmb/WPxApB-69YAughV6jf7AWZQnd6M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2014__08__vegan-mapo-tofu-kenji-502201f86bf740ae8361bb8fc9b68feb.jpg",
+        "image": "https://www.cookwithmanali.com/wp-content/uploads/2021/03/Vegan-Mapo-Tofu.jpg",
         "cuisine": "Szechuan"
     },
     ...
@@ -70,7 +70,11 @@ Seeds the data with pre-created users
 ![RecipeCarousel](https://github.com/meganle414/kangacook/blob/main/images/recipe_carousel.png?raw=true)
 ![RecipeList](https://github.com/meganle414/kangacook/blob/main/images/recipe_list.png?raw=true)
 ![Contact Page](https://github.com/meganle414/kangacook/blob/main/images/contact.png?raw=true)
-![Members](https://github.com/meganle414/kangacook/blob/main/images/members.png?raw=true)
+![Login Page](https://github.com/meganle414/kangacook/blob/main/images/login.png?raw=true)
+![Invalid Email or Password Login Error](https://github.com/meganle414/kangacook/blob/main/images/invalid_email_password_login_error.png?raw=true)
+![Sign Up Page](https://github.com/meganle414/kangacook/blob/main/images/sign_up.png?raw=true)
+![Existing User Sign Up Error](https://github.com/meganle414/kangacook/blob/main/images/existing_user_sign_up_error.png?raw=true)
+![Mismatching Password Sign Up Error](https://github.com/meganle414/kangacook/blob/main/images/mismatching_password_sign_up_error.png?raw=true)
 
 # kangacook
 Develop a simple website:  • Frontend: Use React.js to build a simple web page (whatever you like to present). Just like to see if you know how to use components with React. • Backend: Use Django to build at least two API endpoints for the frontend page you created to use.
