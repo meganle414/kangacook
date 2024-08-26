@@ -64,16 +64,25 @@ Seeds the data with pre-created users
     }
 ]
 ```
-
+### Homepage
 ![Homepage](https://github.com/meganle414/kangacook/blob/main/images/index.png?raw=true)
+### Footer
 ![Footer](https://github.com/meganle414/kangacook/blob/main/images/index_footer.png?raw=true)
-![RecipeCarousel](https://github.com/meganle414/kangacook/blob/main/images/recipe_carousel.png?raw=true)
-![RecipeList](https://github.com/meganle414/kangacook/blob/main/images/recipe_list.png?raw=true)
+### RecipeCarousel
+![Recipe Carousel](https://github.com/meganle414/kangacook/blob/main/images/recipe_carousel.png?raw=true)
+### Recipe List
+![Recipe List](https://github.com/meganle414/kangacook/blob/main/images/recipe_list.png?raw=true)
+### Contact Page
 ![Contact Page](https://github.com/meganle414/kangacook/blob/main/images/contact.png?raw=true)
+### Login Page
 ![Login Page](https://github.com/meganle414/kangacook/blob/main/images/login.png?raw=true)
+### Invalid Email or Password Login Error
 ![Invalid Email or Password Login Error](https://github.com/meganle414/kangacook/blob/main/images/invalid_email_password_login_error.png?raw=true)
+### Sign Up Page
 ![Sign Up Page](https://github.com/meganle414/kangacook/blob/main/images/sign_up.png?raw=true)
+### Existing User Sign Up Error
 ![Existing User Sign Up Error](https://github.com/meganle414/kangacook/blob/main/images/existing_user_sign_up_error.png?raw=true)
+### Mismatching Password Sign Up Error
 ![Mismatching Password Sign Up Error](https://github.com/meganle414/kangacook/blob/main/images/mismatching_password_sign_up_error.png?raw=true)
 
 # kangacook
